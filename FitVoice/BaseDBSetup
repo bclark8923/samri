@@ -1,0 +1,39 @@
+{"action": "create", "model": "food_log", "payload": {"food_name": "Cheeseburger", "calories": null, "brand_name": null, "amount": null, "meal_type": null, "date": null, "amount_units": null}}
+
+{"action": "create", "model": "fitness_log", "payload": {"distance": "6.0", "name": "Ran", "start_time": null, "calories": null, "distance_units": "mi", "duration": null, "start_date": null}}
+
+{"action": "create", "model": "fitness_measurement", "payload": {"date": null, "amount": "185.0", "type": "weight", "time": null}}
+
+
+
+
+Query Table:
+ID
+Query
+JSON
+Type
+TypeID
+
+FoodLog Table:
+food_name
+calories
+brand_name
+amount
+meal_type
+date
+amount_units
+
+FitnessLog Table:
+distance
+name
+start_time
+calories
+distance_units
+duration
+start_date
+
+FitnessMeasurement Table:
+date
+amount
+type
+time

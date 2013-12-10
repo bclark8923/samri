@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30C2BA51834427000810F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BA41834427000810F5B /* Foundation.framework */; };
+		D30C2BA71834427000810F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BA61834427000810F5B /* CoreGraphics.framework */; };
+		D30C2BA91834427000810F5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BA81834427000810F5B /* UIKit.framework */; };
+		D30C2BAF1834427100810F5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BAD1834427100810F5B /* InfoPlist.strings */; };
+		D30C2BB11834427100810F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2BB01834427100810F5B /* main.m */; };
+		D30C2BB81834427100810F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BB61834427100810F5B /* Main.storyboard */; };
+		D30C2BBB1834427100810F5B /* fvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2BBA1834427100810F5B /* fvViewController.m */; };
+		D30C2BBD1834427100810F5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BBC1834427100810F5B /* Images.xcassets */; };
+		D30C2BC41834427100810F5B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BC31834427100810F5B /* XCTest.framework */; };
+		D30C2BC51834427100810F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BA41834427000810F5B /* Foundation.framework */; };
+		D30C2BC61834427100810F5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BA81834427000810F5B /* UIKit.framework */; };
+		D30C2BCE1834427100810F5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BCC1834427100810F5B /* InfoPlist.strings */; };
+		D30C2BD01834427100810F5B /* FitVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2BCF1834427100810F5B /* FitVoiceTests.m */; };
+		D30C2BDC18344EF100810F5B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BDB18344EF100810F5B /* CFNetwork.framework */; };
+		D30C2BDE18344EF400810F5B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BDD18344EF400810F5B /* Security.framework */; };
+		D30C2BE018344F2600810F5B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BDF18344F2600810F5B /* CoreAudio.framework */; };
+		D30C2BE218344F3F00810F5B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BE118344F3F00810F5B /* AudioToolbox.framework */; };
+		D30C2BE418344F4300810F5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BE318344F4300810F5B /* AVFoundation.framework */; };
+		D30C2BE618344F5800810F5B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BE518344F5800810F5B /* SystemConfiguration.framework */; };
+		D30C2BE91834559D00810F5B /* QueryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2BE81834559D00810F5B /* QueryObject.m */; };
+		D30C2BEC18345E9B00810F5B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2BEB18345E9B00810F5B /* DBManager.m */; };
+		D30C2BF01834889700810F5B /* AnnoTree.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BEF1834889700810F5B /* AnnoTree.bundle */; };
+		D30C2BF2183488EF00810F5B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C2BF1183488EF00810F5B /* libsqlite3.dylib */; };
+		D30C2BFA1834922F00810F5B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BF91834922F00810F5B /* Icon.png */; };
+		D30C2BFE183492D900810F5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BFD183492D900810F5B /* Default-568h@2x.png */; };
+		D30C2C01183493FC00810F5B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C2BFF183493FC00810F5B /* Default.png */; };
+		D30C2C02183493FC00810F5B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C2C00183493FC00810F5B /* Default@2x.png */; };
+		D30C2C051834B7D100810F5B /* FoodLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C041834B7D100810F5B /* FoodLogObject.m */; };
+		D30C2C081834B7DE00810F5B /* FitnessLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C071834B7DE00810F5B /* FitnessLogObject.m */; };
+		D30C2C0B1834B7ED00810F5B /* FitnessMeasurementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C0A1834B7ED00810F5B /* FitnessMeasurementObject.m */; };
+		D3548192184938E600C4ABAB /* Appsee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3548191184938E600C4ABAB /* Appsee.framework */; };
+		D35481941849392000C4ABAB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35481931849392000C4ABAB /* CoreMedia.framework */; };
+		D3548196184D2B7400C4ABAB /* RecordButtonClearRed.png in Resources */ = {isa = PBXBuildFile; fileRef = D3548195184D2B7300C4ABAB /* RecordButtonClearRed.png */; };
+		D3548198184D2DBB00C4ABAB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3548197184D2DBB00C4ABAB /* MapKit.framework */; };
+		D354819B184D3EB600C4ABAB /* fvTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D354819A184D3EB600C4ABAB /* fvTabBarViewController.m */; };
+		D354819E184D3FB500C4ABAB /* fvFoodLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D354819D184D3FB500C4ABAB /* fvFoodLogViewController.m */; };
+		D35481A1184D4CB400C4ABAB /* fvFitnessLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35481A0184D4CB400C4ABAB /* fvFitnessLogViewController.m */; };
+		D35481A3184D516800C4ABAB /* MeasurementTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481A2184D516700C4ABAB /* MeasurementTabBar.png */; };
+		D35481A5184D549900C4ABAB /* MeasurementTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481A4184D549900C4ABAB /* MeasurementTabBar@2x.png */; };
+		D35481A8184D550B00C4ABAB /* fvMeasurementLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35481A7184D550B00C4ABAB /* fvMeasurementLogViewController.m */; };
+		D35481AB184D56DD00C4ABAB /* HomeTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481A9184D56DD00C4ABAB /* HomeTabBar.png */; };
+		D35481AC184D56DD00C4ABAB /* HomeTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481AA184D56DD00C4ABAB /* HomeTabBar@2x.png */; };
+		D35481B5184D596900C4ABAB /* FoodTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481B3184D596900C4ABAB /* FoodTabBar.png */; };
+		D35481B6184D596900C4ABAB /* FoodTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481B4184D596900C4ABAB /* FoodTabBar@2x.png */; };
+		D35481B9184D5EC400C4ABAB /* FitnessTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481B7184D5EC400C4ABAB /* FitnessTabBar.png */; };
+		D35481BA184D5EC400C4ABAB /* FitnessTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481B8184D5EC400C4ABAB /* FitnessTabBar@2x.png */; };
+		D35481C0184D6B1A00C4ABAB /* AnnoTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35481BF184D6B1900C4ABAB /* AnnoTree.framework */; };
+		D35481C3184D83B300C4ABAB /* fvSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35481C2184D83B300C4ABAB /* fvSignUpViewController.m */; };
+		D35481C5184DAC3000C4ABAB /* SamriDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481C4184DAC3000C4ABAB /* SamriDefault.png */; };
+		D35481C8184DBF1D00C4ABAB /* UserTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481C6184DBF1D00C4ABAB /* UserTabBar.png */; };
+		D35481C9184DBF1D00C4ABAB /* UserTabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35481C7184DBF1D00C4ABAB /* UserTabBar@2x.png */; };
+		D35481CC184DC2BD00C4ABAB /* fvLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35481CB184DC2BD00C4ABAB /* fvLoginViewController.m */; };
+		D36F6948183B13C600C1594B /* fvFacebookLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F6947183B13C600C1594B /* fvFacebookLoginViewController.m */; };
+		D36F694A183B44D300C1594B /* FBConnect.png in Resources */ = {isa = PBXBuildFile; fileRef = D36F6949183B44D300C1594B /* FBConnect.png */; };
+		D36F69FB183C0A8100C1594B /* RecordButtonClear.png in Resources */ = {isa = PBXBuildFile; fileRef = D36F69FA183C0A8100C1594B /* RecordButtonClear.png */; };
+		D36F69FF183C0B2600C1594B /* RecordButtonHighlightedClear.png in Resources */ = {isa = PBXBuildFile; fileRef = D36F69FE183C0B2600C1594B /* RecordButtonHighlightedClear.png */; };
+		D36F6A09183C1D3D00C1594B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A08183C1D3D00C1594B /* libxml2.dylib */; };
+		D36F6A0B183C1D4200C1594B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A0A183C1D4100C1594B /* libz.dylib */; };
+		D36F6A0D183C1D5800C1594B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A0C183C1D5800C1594B /* CoreData.framework */; };
+		D36F6A0F183C1D6100C1594B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A0E183C1D6100C1594B /* MessageUI.framework */; };
+		D36F6A11183C1D6B00C1594B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A10183C1D6B00C1594B /* MobileCoreServices.framework */; };
+		D36F6A13183C1D7600C1594B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6A12183C1D7600C1594B /* QuartzCore.framework */; };
+		D36F6B81183C765200C1594B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6B80183C765200C1594B /* ImageIO.framework */; };
+		D36F6B83183C7E2A00C1594B /* fvAppDelegate.m in Resources */ = {isa = PBXBuildFile; fileRef = D36F6B82183C7E2A00C1594B /* fvAppDelegate.m */; };
+		D36F6B95183D051000C1594B /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6B94183D051000C1594B /* Twitter.framework */; };
+		D36F6B9B183D09F900C1594B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6B9A183D09F900C1594B /* AddressBook.framework */; };
+		D36F6B9D183D09FD00C1594B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6B9C183D09FD00C1594B /* AddressBookUI.framework */; };
+		D36F6C1A183D317D00C1594B /* fvAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F6B82183C7E2A00C1594B /* fvAppDelegate.m */; };
+		D36F6C2A1842B77A00C1594B /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6C291842B77A00C1594B /* SpeechKit.framework */; };
+		D36F6C2D1842BEEA00C1594B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6C2B1842BEEA00C1594B /* FacebookSDK.framework */; };
+		D36F6C2E1842BEEA00C1594B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6C2C1842BEEA00C1594B /* Parse.framework */; };
+		D36F6C311842D37E00C1594B /* fvLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F6C301842D37E00C1594B /* fvLogCell.m */; };
+		D39C292618508BC9005E4B03 /* Flurry in Resources */ = {isa = PBXBuildFile; fileRef = D39C292518508BC9005E4B03 /* Flurry */; };
+		D39C292918508BD2005E4B03 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */; };
+		D39C292B18508BFD005E4B03 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C292A18508BFD005E4B03 /* AdSupport.framework */; };
+		D39C292E18558B40005E4B03 /* libHeap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C292D18558B40005E4B03 /* libHeap.a */; };
+		D3BAEB11184FA2FC00580668 /* fvUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BAEB10184FA2FC00580668 /* fvUserViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30C2BC71834427100810F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30C2B991834427000810F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30C2BA01834427000810F5B;
+			remoteInfo = FitVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D30C2BA11834427000810F5B /* FitVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30C2BA41834427000810F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D30C2BA61834427000810F5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D30C2BA81834427000810F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D30C2BAC1834427100810F5B /* FitVoice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitVoice-Info.plist"; sourceTree = "<group>"; };
+		D30C2BAE1834427100810F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D30C2BB01834427100810F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D30C2BB21834427100810F5B /* FitVoice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitVoice-Prefix.pch"; sourceTree = "<group>"; };
+		D30C2BB31834427100810F5B /* fvAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fvAppDelegate.h; sourceTree = "<group>"; };
+		D30C2BB71834427100810F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D30C2BB91834427100810F5B /* fvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fvViewController.h; sourceTree = "<group>"; };
+		D30C2BBA1834427100810F5B /* fvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fvViewController.m; sourceTree = "<group>"; };
+		D30C2BBC1834427100810F5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D30C2BC21834427100810F5B /* FitVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30C2BC31834427100810F5B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D30C2BCB1834427100810F5B /* FitVoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitVoiceTests-Info.plist"; sourceTree = "<group>"; };
+		D30C2BCD1834427100810F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D30C2BCF1834427100810F5B /* FitVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitVoiceTests.m; sourceTree = "<group>"; };
+		D30C2BDB18344EF100810F5B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D30C2BDD18344EF400810F5B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D30C2BDF18344F2600810F5B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D30C2BE118344F3F00810F5B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D30C2BE318344F4300810F5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D30C2BE518344F5800810F5B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D30C2BE71834559D00810F5B /* QueryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryObject.h; sourceTree = "<group>"; };
+		D30C2BE81834559D00810F5B /* QueryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryObject.m; sourceTree = "<group>"; };
+		D30C2BEA18345E9B00810F5B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		D30C2BEB18345E9B00810F5B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		D30C2BEF1834889700810F5B /* AnnoTree.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AnnoTree.bundle; sourceTree = "<group>"; };
+		D30C2BF1183488EF00810F5B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D30C2BF91834922F00810F5B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D30C2BFD183492D900810F5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D30C2BFF183493FC00810F5B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D30C2C00183493FC00810F5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D30C2C031834B7D100810F5B /* FoodLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodLogObject.h; sourceTree = "<group>"; };
+		D30C2C041834B7D100810F5B /* FoodLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodLogObject.m; sourceTree = "<group>"; };
+		D30C2C061834B7DE00810F5B /* FitnessLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitnessLogObject.h; sourceTree = "<group>"; };
+		D30C2C071834B7DE00810F5B /* FitnessLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitnessLogObject.m; sourceTree = "<group>"; };
+		D30C2C091834B7ED00810F5B /* FitnessMeasurementObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitnessMeasurementObject.h; sourceTree = "<group>"; };
+		D30C2C0A1834B7ED00810F5B /* FitnessMeasurementObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitnessMeasurementObject.m; sourceTree = "<group>"; };
+		D3548191184938E600C4ABAB /* Appsee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appsee.framework; sourceTree = "<group>"; };
+		D35481931849392000C4ABAB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D3548195184D2B7300C4ABAB /* RecordButtonClearRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonClearRed.png; sourceTree = "<group>"; };
+		D3548197184D2DBB00C4ABAB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D3548199184D3EB600C4ABAB /* fvTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvTabBarViewController.h; sourceTree = "<group>"; };
+		D354819A184D3EB600C4ABAB /* fvTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvTabBarViewController.m; sourceTree = "<group>"; };
+		D354819C184D3FB500C4ABAB /* fvFoodLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvFoodLogViewController.h; sourceTree = "<group>"; };
+		D354819D184D3FB500C4ABAB /* fvFoodLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvFoodLogViewController.m; sourceTree = "<group>"; };
+		D354819F184D4CB400C4ABAB /* fvFitnessLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvFitnessLogViewController.h; sourceTree = "<group>"; };
+		D35481A0184D4CB400C4ABAB /* fvFitnessLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvFitnessLogViewController.m; sourceTree = "<group>"; };
+		D35481A2184D516700C4ABAB /* MeasurementTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeasurementTabBar.png; sourceTree = "<group>"; };
+		D35481A4184D549900C4ABAB /* MeasurementTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasurementTabBar@2x.png"; sourceTree = "<group>"; };
+		D35481A6184D550B00C4ABAB /* fvMeasurementLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvMeasurementLogViewController.h; sourceTree = "<group>"; };
+		D35481A7184D550B00C4ABAB /* fvMeasurementLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvMeasurementLogViewController.m; sourceTree = "<group>"; };
+		D35481A9184D56DD00C4ABAB /* HomeTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeTabBar.png; sourceTree = "<group>"; };
+		D35481AA184D56DD00C4ABAB /* HomeTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HomeTabBar@2x.png"; sourceTree = "<group>"; };
+		D35481B3184D596900C4ABAB /* FoodTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FoodTabBar.png; sourceTree = "<group>"; };
+		D35481B4184D596900C4ABAB /* FoodTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FoodTabBar@2x.png"; sourceTree = "<group>"; };
+		D35481B7184D5EC400C4ABAB /* FitnessTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FitnessTabBar.png; sourceTree = "<group>"; };
+		D35481B8184D5EC400C4ABAB /* FitnessTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FitnessTabBar@2x.png"; sourceTree = "<group>"; };
+		D35481BF184D6B1900C4ABAB /* AnnoTree.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnnoTree.framework; path = FitVoice/AnnoTree.framework; sourceTree = "<group>"; };
+		D35481C1184D83B200C4ABAB /* fvSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvSignUpViewController.h; sourceTree = "<group>"; };
+		D35481C2184D83B300C4ABAB /* fvSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvSignUpViewController.m; sourceTree = "<group>"; };
+		D35481C4184DAC3000C4ABAB /* SamriDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SamriDefault.png; sourceTree = "<group>"; };
+		D35481C6184DBF1D00C4ABAB /* UserTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserTabBar.png; sourceTree = "<group>"; };
+		D35481C7184DBF1D00C4ABAB /* UserTabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserTabBar@2x.png"; sourceTree = "<group>"; };
+		D35481CA184DC2BD00C4ABAB /* fvLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvLoginViewController.h; sourceTree = "<group>"; };
+		D35481CB184DC2BD00C4ABAB /* fvLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvLoginViewController.m; sourceTree = "<group>"; };
+		D36F6946183B13C500C1594B /* fvFacebookLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvFacebookLoginViewController.h; sourceTree = "<group>"; };
+		D36F6947183B13C600C1594B /* fvFacebookLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvFacebookLoginViewController.m; sourceTree = "<group>"; };
+		D36F6949183B44D300C1594B /* FBConnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBConnect.png; sourceTree = "<group>"; };
+		D36F69FA183C0A8100C1594B /* RecordButtonClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonClear.png; sourceTree = "<group>"; };
+		D36F69FE183C0B2600C1594B /* RecordButtonHighlightedClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonHighlightedClear.png; sourceTree = "<group>"; };
+		D36F6A08183C1D3D00C1594B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D36F6A0A183C1D4100C1594B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D36F6A0C183C1D5800C1594B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D36F6A0E183C1D6100C1594B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D36F6A10183C1D6B00C1594B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D36F6A12183C1D7600C1594B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D36F6B80183C765200C1594B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D36F6B82183C7E2A00C1594B /* fvAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvAppDelegate.m; sourceTree = "<group>"; };
+		D36F6B94183D051000C1594B /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D36F6B9A183D09F900C1594B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D36F6B9C183D09FD00C1594B /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D36F6C291842B77A00C1594B /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = FitVoice/SpeechKit.framework; sourceTree = "<group>"; };
+		D36F6C2B1842BEEA00C1594B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FitVoice/FacebookSDK.framework; sourceTree = "<group>"; };
+		D36F6C2C1842BEEA00C1594B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = FitVoice/Parse.framework; sourceTree = "<group>"; };
+		D36F6C2F1842D37D00C1594B /* fvLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvLogCell.h; sourceTree = "<group>"; };
+		D36F6C301842D37E00C1594B /* fvLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvLogCell.m; sourceTree = "<group>"; };
+		D39C292518508BC9005E4B03 /* Flurry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Flurry; sourceTree = "<group>"; };
+		D39C292718508BD2005E4B03 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
+		D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.3.0.a; path = Flurry/libFlurry_4.3.0.a; sourceTree = "<group>"; };
+		D39C292A18508BFD005E4B03 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D39C292C18558B40005E4B03 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		D39C292D18558B40005E4B03 /* libHeap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHeap.a; sourceTree = "<group>"; };
+		D3BAEB0F184FA2FC00580668 /* fvUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvUserViewController.h; sourceTree = "<group>"; };
+		D3BAEB10184FA2FC00580668 /* fvUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvUserViewController.m; sourceTree = "<group>"; };
+		D3BAEB121850432300580668 /* sysVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sysVersion.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30C2B9E1834427000810F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39C292B18508BFD005E4B03 /* AdSupport.framework in Frameworks */,
+				D30C2BDE18344EF400810F5B /* Security.framework in Frameworks */,
+				D30C2BE618344F5800810F5B /* SystemConfiguration.framework in Frameworks */,
+				D3548198184D2DBB00C4ABAB /* MapKit.framework in Frameworks */,
+				D39C292918508BD2005E4B03 /* libFlurry_4.3.0.a in Frameworks */,
+				D35481941849392000C4ABAB /* CoreMedia.framework in Frameworks */,
+				D36F6B9D183D09FD00C1594B /* AddressBookUI.framework in Frameworks */,
+				D36F6B9B183D09F900C1594B /* AddressBook.framework in Frameworks */,
+				D36F6B95183D051000C1594B /* Twitter.framework in Frameworks */,
+				D36F6B81183C765200C1594B /* ImageIO.framework in Frameworks */,
+				D36F6A13183C1D7600C1594B /* QuartzCore.framework in Frameworks */,
+				D36F6A11183C1D6B00C1594B /* MobileCoreServices.framework in Frameworks */,
+				D36F6A0F183C1D6100C1594B /* MessageUI.framework in Frameworks */,
+				D36F6A0D183C1D5800C1594B /* CoreData.framework in Frameworks */,
+				D36F6A0B183C1D4200C1594B /* libz.dylib in Frameworks */,
+				D36F6A09183C1D3D00C1594B /* libxml2.dylib in Frameworks */,
+				D36F6C2D1842BEEA00C1594B /* FacebookSDK.framework in Frameworks */,
+				D39C292E18558B40005E4B03 /* libHeap.a in Frameworks */,
+				D30C2BF2183488EF00810F5B /* libsqlite3.dylib in Frameworks */,
+				D30C2BE418344F4300810F5B /* AVFoundation.framework in Frameworks */,
+				D30C2BE218344F3F00810F5B /* AudioToolbox.framework in Frameworks */,
+				D30C2BE018344F2600810F5B /* CoreAudio.framework in Frameworks */,
+				D30C2BDC18344EF100810F5B /* CFNetwork.framework in Frameworks */,
+				D3548192184938E600C4ABAB /* Appsee.framework in Frameworks */,
+				D35481C0184D6B1A00C4ABAB /* AnnoTree.framework in Frameworks */,
+				D36F6C2A1842B77A00C1594B /* SpeechKit.framework in Frameworks */,
+				D30C2BA71834427000810F5B /* CoreGraphics.framework in Frameworks */,
+				D30C2BA91834427000810F5B /* UIKit.framework in Frameworks */,
+				D36F6C2E1842BEEA00C1594B /* Parse.framework in Frameworks */,
+				D30C2BA51834427000810F5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30C2BBF1834427100810F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C2BC41834427100810F5B /* XCTest.framework in Frameworks */,
+				D30C2BC61834427100810F5B /* UIKit.framework in Frameworks */,
+				D30C2BC51834427100810F5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30C2B981834427000810F5B = {
+			isa = PBXGroup;
+			children = (
+				D39C292718508BD2005E4B03 /* Flurry.h */,
+				D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */,
+				D30C2BAA1834427000810F5B /* FitVoice */,
+				D30C2BC91834427100810F5B /* FitVoiceTests */,
+				D30C2BA31834427000810F5B /* Frameworks */,
+				D30C2BA21834427000810F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D30C2BA21834427000810F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BA11834427000810F5B /* FitVoice.app */,
+				D30C2BC21834427100810F5B /* FitVoiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D30C2BA31834427000810F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D39C292C18558B40005E4B03 /* Heap.h */,
+				D39C292D18558B40005E4B03 /* libHeap.a */,
+				D39C292A18508BFD005E4B03 /* AdSupport.framework */,
+				D39C292518508BC9005E4B03 /* Flurry */,
+				D35481BF184D6B1900C4ABAB /* AnnoTree.framework */,
+				D3548197184D2DBB00C4ABAB /* MapKit.framework */,
+				D35481931849392000C4ABAB /* CoreMedia.framework */,
+				D3548191184938E600C4ABAB /* Appsee.framework */,
+				D36F6C2B1842BEEA00C1594B /* FacebookSDK.framework */,
+				D36F6C2C1842BEEA00C1594B /* Parse.framework */,
+				D36F6C291842B77A00C1594B /* SpeechKit.framework */,
+				D36F6B9C183D09FD00C1594B /* AddressBookUI.framework */,
+				D36F6B9A183D09F900C1594B /* AddressBook.framework */,
+				D36F6B94183D051000C1594B /* Twitter.framework */,
+				D36F6B80183C765200C1594B /* ImageIO.framework */,
+				D36F6A12183C1D7600C1594B /* QuartzCore.framework */,
+				D36F6A10183C1D6B00C1594B /* MobileCoreServices.framework */,
+				D36F6A0E183C1D6100C1594B /* MessageUI.framework */,
+				D36F6A0C183C1D5800C1594B /* CoreData.framework */,
+				D36F6A0A183C1D4100C1594B /* libz.dylib */,
+				D36F6A08183C1D3D00C1594B /* libxml2.dylib */,
+				D30C2BF1183488EF00810F5B /* libsqlite3.dylib */,
+				D30C2BE518344F5800810F5B /* SystemConfiguration.framework */,
+				D30C2BE318344F4300810F5B /* AVFoundation.framework */,
+				D30C2BE118344F3F00810F5B /* AudioToolbox.framework */,
+				D30C2BDF18344F2600810F5B /* CoreAudio.framework */,
+				D30C2BDD18344EF400810F5B /* Security.framework */,
+				D30C2BDB18344EF100810F5B /* CFNetwork.framework */,
+				D30C2BA41834427000810F5B /* Foundation.framework */,
+				D30C2BA61834427000810F5B /* CoreGraphics.framework */,
+				D30C2BA81834427000810F5B /* UIKit.framework */,
+				D30C2BC31834427100810F5B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30C2BAA1834427000810F5B /* FitVoice */ = {
+			isa = PBXGroup;
+			children = (
+				D36F6AFA183C737900C1594B /* Classes */,
+				D30C2BBC1834427100810F5B /* Images.xcassets */,
+				D30C2BAB1834427000810F5B /* Supporting Files */,
+			);
+			path = FitVoice;
+			sourceTree = "<group>";
+		};
+		D30C2BAB1834427000810F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BF91834922F00810F5B /* Icon.png */,
+				D35481AE184D56EB00C4ABAB /* Default */,
+				D35481AD184D56E100C4ABAB /* Tab Bar */,
+				D3548195184D2B7300C4ABAB /* RecordButtonClearRed.png */,
+				D36F69FE183C0B2600C1594B /* RecordButtonHighlightedClear.png */,
+				D36F69FA183C0A8100C1594B /* RecordButtonClear.png */,
+				D36F6949183B44D300C1594B /* FBConnect.png */,
+				D30C2BEF1834889700810F5B /* AnnoTree.bundle */,
+				D30C2BAC1834427100810F5B /* FitVoice-Info.plist */,
+				D30C2BAD1834427100810F5B /* InfoPlist.strings */,
+				D30C2BB01834427100810F5B /* main.m */,
+				D30C2BB21834427100810F5B /* FitVoice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D30C2BC91834427100810F5B /* FitVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BCF1834427100810F5B /* FitVoiceTests.m */,
+				D30C2BCA1834427100810F5B /* Supporting Files */,
+			);
+			path = FitVoiceTests;
+			sourceTree = "<group>";
+		};
+		D30C2BCA1834427100810F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BCB1834427100810F5B /* FitVoiceTests-Info.plist */,
+				D30C2BCC1834427100810F5B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35481AD184D56E100C4ABAB /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				D35481C6184DBF1D00C4ABAB /* UserTabBar.png */,
+				D35481C7184DBF1D00C4ABAB /* UserTabBar@2x.png */,
+				D35481B7184D5EC400C4ABAB /* FitnessTabBar.png */,
+				D35481B8184D5EC400C4ABAB /* FitnessTabBar@2x.png */,
+				D35481B3184D596900C4ABAB /* FoodTabBar.png */,
+				D35481B4184D596900C4ABAB /* FoodTabBar@2x.png */,
+				D35481A9184D56DD00C4ABAB /* HomeTabBar.png */,
+				D35481AA184D56DD00C4ABAB /* HomeTabBar@2x.png */,
+				D35481A4184D549900C4ABAB /* MeasurementTabBar@2x.png */,
+				D35481A2184D516700C4ABAB /* MeasurementTabBar.png */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		D35481AE184D56EB00C4ABAB /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				D35481C4184DAC3000C4ABAB /* SamriDefault.png */,
+				D30C2BFF183493FC00810F5B /* Default.png */,
+				D30C2C00183493FC00810F5B /* Default@2x.png */,
+				D30C2BFD183492D900810F5B /* Default-568h@2x.png */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		D35481AF184D573200C4ABAB /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BB31834427100810F5B /* fvAppDelegate.h */,
+				D36F6B82183C7E2A00C1594B /* fvAppDelegate.m */,
+				D3BAEB121850432300580668 /* sysVersion.h */,
+			);
+			name = Defaults;
+			sourceTree = "<group>";
+		};
+		D35481B0184D573D00C4ABAB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D36F6946183B13C500C1594B /* fvFacebookLoginViewController.h */,
+				D36F6947183B13C600C1594B /* fvFacebookLoginViewController.m */,
+				D35481C1184D83B200C4ABAB /* fvSignUpViewController.h */,
+				D35481C2184D83B300C4ABAB /* fvSignUpViewController.m */,
+				D35481CA184DC2BD00C4ABAB /* fvLoginViewController.h */,
+				D35481CB184DC2BD00C4ABAB /* fvLoginViewController.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		D35481B1184D575500C4ABAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BB91834427100810F5B /* fvViewController.h */,
+				D30C2BBA1834427100810F5B /* fvViewController.m */,
+				D3548199184D3EB600C4ABAB /* fvTabBarViewController.h */,
+				D354819A184D3EB600C4ABAB /* fvTabBarViewController.m */,
+				D354819C184D3FB500C4ABAB /* fvFoodLogViewController.h */,
+				D354819D184D3FB500C4ABAB /* fvFoodLogViewController.m */,
+				D354819F184D4CB400C4ABAB /* fvFitnessLogViewController.h */,
+				D35481A0184D4CB400C4ABAB /* fvFitnessLogViewController.m */,
+				D35481A6184D550B00C4ABAB /* fvMeasurementLogViewController.h */,
+				D35481A7184D550B00C4ABAB /* fvMeasurementLogViewController.m */,
+				D3BAEB0F184FA2FC00580668 /* fvUserViewController.h */,
+				D3BAEB10184FA2FC00580668 /* fvUserViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D35481B2184D577100C4ABAB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BEA18345E9B00810F5B /* DBManager.h */,
+				D30C2BEB18345E9B00810F5B /* DBManager.m */,
+				D30C2C031834B7D100810F5B /* FoodLogObject.h */,
+				D30C2C041834B7D100810F5B /* FoodLogObject.m */,
+				D30C2C061834B7DE00810F5B /* FitnessLogObject.h */,
+				D30C2C071834B7DE00810F5B /* FitnessLogObject.m */,
+				D30C2C091834B7ED00810F5B /* FitnessMeasurementObject.h */,
+				D30C2C0A1834B7ED00810F5B /* FitnessMeasurementObject.m */,
+				D30C2BE71834559D00810F5B /* QueryObject.h */,
+				D30C2BE81834559D00810F5B /* QueryObject.m */,
+				D36F6C2F1842D37D00C1594B /* fvLogCell.h */,
+				D36F6C301842D37E00C1594B /* fvLogCell.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		D36F6AFA183C737900C1594B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D30C2BB61834427100810F5B /* Main.storyboard */,
+				D35481B2184D577100C4ABAB /* Objects */,
+				D35481B1184D575500C4ABAB /* Views */,
+				D35481B0184D573D00C4ABAB /* Authentication */,
+				D35481AF184D573200C4ABAB /* Defaults */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30C2BA01834427000810F5B /* FitVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30C2BD31834427100810F5B /* Build configuration list for PBXNativeTarget "FitVoice" */;
+			buildPhases = (
+				D30C2B9D1834427000810F5B /* Sources */,
+				D30C2B9E1834427000810F5B /* Frameworks */,
+				D30C2B9F1834427000810F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitVoice;
+			productName = FitVoice;
+			productReference = D30C2BA11834427000810F5B /* FitVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D30C2BC11834427100810F5B /* FitVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30C2BD61834427100810F5B /* Build configuration list for PBXNativeTarget "FitVoiceTests" */;
+			buildPhases = (
+				D30C2BBE1834427100810F5B /* Sources */,
+				D30C2BBF1834427100810F5B /* Frameworks */,
+				D30C2BC01834427100810F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30C2BC81834427100810F5B /* PBXTargetDependency */,
+			);
+			name = FitVoiceTests;
+			productName = FitVoiceTests;
+			productReference = D30C2BC21834427100810F5B /* FitVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30C2B991834427000810F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = fv;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = FitVoice;
+				TargetAttributes = {
+					D30C2BC11834427100810F5B = {
+						TestTargetID = D30C2BA01834427000810F5B;
+					};
+				};
+			};
+			buildConfigurationList = D30C2B9C1834427000810F5B /* Build configuration list for PBXProject "FitVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D30C2B981834427000810F5B;
+			productRefGroup = D30C2BA21834427000810F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30C2BA01834427000810F5B /* FitVoice */,
+				D30C2BC11834427100810F5B /* FitVoiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30C2B9F1834427000810F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C2BBD1834427100810F5B /* Images.xcassets in Resources */,
+				D30C2BAF1834427100810F5B /* InfoPlist.strings in Resources */,
+				D35481BA184D5EC400C4ABAB /* FitnessTabBar@2x.png in Resources */,
+				D35481A3184D516800C4ABAB /* MeasurementTabBar.png in Resources */,
+				D35481C5184DAC3000C4ABAB /* SamriDefault.png in Resources */,
+				D30C2BFE183492D900810F5B /* Default-568h@2x.png in Resources */,
+				D30C2C02183493FC00810F5B /* Default@2x.png in Resources */,
+				D36F69FB183C0A8100C1594B /* RecordButtonClear.png in Resources */,
+				D30C2BFA1834922F00810F5B /* Icon.png in Resources */,
+				D35481C9184DBF1D00C4ABAB /* UserTabBar@2x.png in Resources */,
+				D39C292618508BC9005E4B03 /* Flurry in Resources */,
+				D35481B5184D596900C4ABAB /* FoodTabBar.png in Resources */,
+				D35481A5184D549900C4ABAB /* MeasurementTabBar@2x.png in Resources */,
+				D35481B6184D596900C4ABAB /* FoodTabBar@2x.png in Resources */,
+				D36F694A183B44D300C1594B /* FBConnect.png in Resources */,
+				D36F69FF183C0B2600C1594B /* RecordButtonHighlightedClear.png in Resources */,
+				D35481C8184DBF1D00C4ABAB /* UserTabBar.png in Resources */,
+				D30C2BB81834427100810F5B /* Main.storyboard in Resources */,
+				D35481AB184D56DD00C4ABAB /* HomeTabBar.png in Resources */,
+				D36F6B83183C7E2A00C1594B /* fvAppDelegate.m in Resources */,
+				D3548196184D2B7400C4ABAB /* RecordButtonClearRed.png in Resources */,
+				D35481B9184D5EC400C4ABAB /* FitnessTabBar.png in Resources */,
+				D35481AC184D56DD00C4ABAB /* HomeTabBar@2x.png in Resources */,
+				D30C2BF01834889700810F5B /* AnnoTree.bundle in Resources */,
+				D30C2C01183493FC00810F5B /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30C2BC01834427100810F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C2BCE1834427100810F5B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30C2B9D1834427000810F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36F6C1A183D317D00C1594B /* fvAppDelegate.m in Sources */,
+				D30C2BE91834559D00810F5B /* QueryObject.m in Sources */,
+				D30C2BBB1834427100810F5B /* fvViewController.m in Sources */,
+				D354819E184D3FB500C4ABAB /* fvFoodLogViewController.m in Sources */,
+				D30C2BB11834427100810F5B /* main.m in Sources */,
+				D30C2BEC18345E9B00810F5B /* DBManager.m in Sources */,
+				D35481CC184DC2BD00C4ABAB /* fvLoginViewController.m in Sources */,
+				D30C2C081834B7DE00810F5B /* FitnessLogObject.m in Sources */,
+				D3BAEB11184FA2FC00580668 /* fvUserViewController.m in Sources */,
+				D354819B184D3EB600C4ABAB /* fvTabBarViewController.m in Sources */,
+				D30C2C0B1834B7ED00810F5B /* FitnessMeasurementObject.m in Sources */,
+				D36F6948183B13C600C1594B /* fvFacebookLoginViewController.m in Sources */,
+				D35481C3184D83B300C4ABAB /* fvSignUpViewController.m in Sources */,
+				D35481A8184D550B00C4ABAB /* fvMeasurementLogViewController.m in Sources */,
+				D36F6C311842D37E00C1594B /* fvLogCell.m in Sources */,
+				D30C2C051834B7D100810F5B /* FoodLogObject.m in Sources */,
+				D35481A1184D4CB400C4ABAB /* fvFitnessLogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30C2BBE1834427100810F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C2BD01834427100810F5B /* FitVoiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30C2BC81834427100810F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30C2BA01834427000810F5B /* FitVoice */;
+			targetProxy = D30C2BC71834427100810F5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D30C2BAD1834427100810F5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30C2BAE1834427100810F5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D30C2BB61834427100810F5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30C2BB71834427100810F5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D30C2BCC1834427100810F5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30C2BCD1834427100810F5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D30C2BD11834427100810F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D30C2BD21834427100810F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30C2BD41834427100810F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FitVoice/FitVoice-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "FitVoice/FitVoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice/Flurry",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D30C2BD51834427100810F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FitVoice/FitVoice-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "FitVoice/FitVoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice",
+					"/Users/Brian/Documents/Dreamforce\\ Hackathon\\ 2013/FitVoice/FitVoice/Flurry",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D30C2BD71834427100810F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FitVoice.app/FitVoice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FitVoice/FitVoice-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FitVoiceTests/FitVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D30C2BD81834427100810F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FitVoice.app/FitVoice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FitVoice/FitVoice-Prefix.pch";
+				INFOPLIST_FILE = "FitVoiceTests/FitVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30C2B9C1834427000810F5B /* Build configuration list for PBXProject "FitVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30C2BD11834427100810F5B /* Debug */,
+				D30C2BD21834427100810F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30C2BD31834427100810F5B /* Build configuration list for PBXNativeTarget "FitVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30C2BD41834427100810F5B /* Debug */,
+				D30C2BD51834427100810F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30C2BD61834427100810F5B /* Build configuration list for PBXNativeTarget "FitVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30C2BD71834427100810F5B /* Debug */,
+				D30C2BD81834427100810F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30C2B991834427000810F5B /* Project object */;
+}

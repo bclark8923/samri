@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hjr-m8-RUL">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Hvl-ry-b0J">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="cLd-ys-NBR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u8B-L0-qM2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GK8-qK-lUy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl8-CZ-gAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2047" y="-1016"/>
+        </scene>
+        <!--Fv Facebook Login View Controller - n/a-->
+        <scene sceneID="qTR-Wv-dA8">
+            <objects>
+                <viewController id="Hjr-m8-RUL" customClass="fvFacebookLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u79-zH-sYm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zmr-J6-e8D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPv-87-5dB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="n/a" id="blW-lk-qTs"/>
+                    <connections>
+                        <segue destination="Akv-v2-scH" kind="modal" identifier="loginSegue" id="8Ux-tG-ujI"/>
+                        <segue destination="XE0-gu-EXt" kind="modal" identifier="manualSignUp" modalTransitionStyle="coverVertical" id="SkE-3x-qCf"/>
+                        <segue destination="5Ol-b9-z2l" kind="modal" identifier="manualLogin" id="vSR-RU-rbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vd-nl-KH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1261" y="-1026"/>
+        </scene>
+        <!--Fv Tab Bar View Controller-->
+        <scene sceneID="j89-yH-prn">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Akv-v2-scH" customClass="fvTabBarViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="RZY-yD-SdE">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3gD-ad-Ggz" kind="relationship" relationship="viewControllers" id="xyw-T4-BNJ"/>
+                        <segue destination="0r4-nH-OBZ" kind="relationship" relationship="viewControllers" id="sv4-U0-1Aa"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Zxo-7u-TWM"/>
+                        <segue destination="k7a-Sd-jPo" kind="relationship" relationship="viewControllers" id="3hK-Up-BBL"/>
+                        <segue destination="Kew-vo-cIN" kind="relationship" relationship="viewControllers" id="R12-j8-rjj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRX-7R-kRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173" y="-1026"/>
+        </scene>
+        <!--Fv Sign Up View Controller-->
+        <scene sceneID="tkJ-JI-xJ8">
+            <objects>
+                <viewController storyboardIdentifier="fvSignUpViewController" id="XE0-gu-EXt" customClass="fvSignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fYi-zY-ENC"/>
+                        <viewControllerLayoutGuide type="bottom" id="m8T-Yx-4YX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDd-BT-GV3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1nq-RG-Elv"/>
+                    <connections>
+                        <segue destination="Akv-v2-scH" kind="modal" identifier="signUpSuccessful" id="Lua-X4-uct"/>
+                        <segue destination="Hjr-m8-RUL" kind="modal" identifier="cancelSignUp" modalTransitionStyle="flipHorizontal" id="SpT-DN-xhw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbo-Nw-AeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="-265"/>
+        </scene>
+        <!--Fv Login View Controller-->
+        <scene sceneID="9Bd-Tm-FuW">
+            <objects>
+                <viewController id="5Ol-b9-z2l" customClass="fvLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZeP-fM-AZY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ezg-WY-iNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tj7-4d-chF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="13K-HM-Nmf"/>
+                    <connections>
+                        <segue destination="Akv-v2-scH" kind="modal" identifier="loginSuccessful" id="6M5-Xg-Daf"/>
+                        <segue destination="Hjr-m8-RUL" kind="modal" identifier="cancelLogin" modalTransitionStyle="flipHorizontal" id="idp-V4-uYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIy-gh-ybs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="579"/>
+        </scene>
+        <!--Fv Food Log View Controller - Food-->
+        <scene sceneID="ALJ-9W-7pO">
+            <objects>
+                <viewController id="3gD-ad-Ggz" customClass="fvFoodLogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2aX-wv-yE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="WIk-SJ-KbL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g2S-uI-Ia5" customClass="fvLogCell">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Food" image="FoodTabBar.png" id="GEq-vS-tUT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bou-7k-vNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="-236"/>
+        </scene>
+        <!--Fv User View Controller - Me-->
+        <scene sceneID="Mca-qw-lwa">
+            <objects>
+                <viewController id="Kew-vo-cIN" customClass="fvUserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcc-Nc-SdM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QVA-i8-Aej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bkA-nY-0vZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qw-Jo-Zfm">
+                                <rect key="frame" x="0.0" y="233" width="320" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="UserTabBar.png" id="GQA-gS-hf5"/>
+                    <connections>
+                        <segue destination="Hjr-m8-RUL" kind="modal" identifier="logoutSegue" id="wQ2-VG-oTY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGV-zp-EzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="590"/>
+        </scene>
+        <!--Fv Measurement Log View Controller - Weight-->
+        <scene sceneID="ARy-V4-VCQ">
+            <objects>
+                <viewController id="k7a-Sd-jPo" customClass="fvMeasurementLogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="naT-g7-N2f"/>
+                        <viewControllerLayoutGuide type="bottom" id="cxO-K5-D25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAT-eh-GQN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weight" image="MeasurementTabBar.png" id="ryf-Vu-tt6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQ4-xP-Ccu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-1016"/>
+        </scene>
+        <!--Fv View Controller - Samri-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="fvViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="fvViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rKo-lr-OAZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z9a-lX-3TU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGo-Dt-pAB">
+                                <rect key="frame" x="0.0" y="-49" width="328" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHz-dY-04S">
+                                <rect key="frame" x="90" y="104" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Record" backgroundImage="RecordButtonClearRed.png">
+                                    <color key="titleColor" red="1" green="0.35686275362968445" blue="0.29411765933036804" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lhz-eq-Bjg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Record and track what you ate," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKI-h7-3b5">
+                                <rect key="frame" x="0.0" y="270" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your workouts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkj-MZ-mZ7">
+                                <rect key="frame" x="0.0" y="298" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and your weight by simply talking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lx-EG-meu">
+                                <rect key="frame" x="0.0" y="328" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Today I had a banana for breakfast...&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-go-Vd9">
+                                <rect key="frame" x="4" y="360" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Samri" image="HomeTabBar.png" id="5eS-7e-sAT"/>
+                    <navigationItem key="navigationItem" id="A9d-r0-R17"/>
+                    <connections>
+                        <outlet property="mapView" destination="DGo-Dt-pAB" id="Hci-cQ-NTy"/>
+                        <outlet property="recordButton" destination="kHz-dY-04S" id="ppB-Ng-CzQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="-2388"/>
+        </scene>
+        <!--Fv Fitness Log View Controller - Fitness-->
+        <scene sceneID="Q77-JJ-Kxb">
+            <objects>
+                <viewController id="0r4-nH-OBZ" customClass="fvFitnessLogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mqz-O5-Lb2"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Q3-ZL-zxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fmS-re-zGv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fitness" image="FitnessTabBar.png" id="hIe-Rk-F0r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwT-QH-BVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-1696"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FitnessTabBar.png" width="25" height="26"/>
+        <image name="FoodTabBar.png" width="25" height="26"/>
+        <image name="HomeTabBar.png" width="25" height="26"/>
+        <image name="MeasurementTabBar.png" width="25" height="26"/>
+        <image name="RecordButtonClearRed.png" width="500" height="500"/>
+        <image name="UserTabBar.png" width="25" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="idp-V4-uYP"/>
+        <segue reference="8Ux-tG-ujI"/>
+    </inferredMetricsTieBreakers>
+</document>
