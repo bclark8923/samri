@@ -228,8 +228,9 @@ const char MyConstantKey;
     transactionState = TS_IDLE;
     [processingVoiceAlert dismissWithClickedButtonIndex:0 animated:NO];
     
-    if (numOfResults > 1) {
+    if (numOfResults > 1 && false) {
         //show all possible
+        dictationResults = results.results;
         NSLog(@"MULTIPLE USING FIRST: %@", [results firstResult]);//searchBox.text = [results firstResult];
         newQuery.query = [NSString stringWithFormat:@"%@", [results firstResult]];
         NSString *filteredResults = [[results firstResult] stringByReplacingOccurrencesOfString:@" "
@@ -239,12 +240,20 @@ const char MyConstantKey;
         newQuery.query = [NSString stringWithFormat:@"%@", [results firstResult]];
         newQuery.email = [[DBManager getSharedInstance] getEmail];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Correct?"
-                                                        message:[results firstResult]
+                                                        message:@"\n\n\n\n\n\n\n"
                                                        delegate:self
                                               cancelButtonTitle:@"Retry"
-                                              otherButtonTitles:@"Yes", nil];
-        alert.tag = 1;
-        [alert show];
+                                              otherButtonTitles:nil];
+        
+        UITableView* myView = [[UITableView alloc] initWithFrame:CGRectMake(10, 40, 264, 150)
+                                                           style:UITableViewStyleGrouped];
+        myView.delegate = self;
+        myView.dataSource = self;
+        myView.backgroundColor = [UIColor clearColor];
+        [self.view addSubview:myView];
+        
+        //alert.tag = 1;
+        //[alert show];
         objc_setAssociatedObject(alert, &MyConstantKey, filteredResults, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
     } else {
@@ -591,6 +600,31 @@ const char MyConstantKey;
         }
     }
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    // Configure the cell...
+    
+    int index = [indexPath indexAtPosition:1];
+    NSString *readOptions = [NSString stringWithFormat:@"%@", [dictationResults objectAtIndex:index]];
+    //NSString *readOptions = [NSString stringWithFormat:@"%@", [object objectAtIndex:2]];
+    [[cell textLabel] setText:readOptions];
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return [dictationResults count];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

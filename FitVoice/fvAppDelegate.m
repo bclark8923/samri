@@ -14,6 +14,8 @@
 #import <Appsee/Appsee.h>
 #import <AnnoTree/AnnoTree.h>
 #import "Heap.h"
+#import "Analytics.h"
+#import "swizzleAnalytics.h"
 
 @implementation fvAppDelegate
 
@@ -33,6 +35,10 @@
 {
     //[[AnnoTree sharedInstance] loadAnnoTree:@"ca8a2aee665e81db47e7a505c68f2764b02ba5fed1bbf6278bf082be5dfe9292"];
     // Override point for customization after application launch.
+    
+    //self.window = [[myAnalyticsWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //swizzleAnalytics *newAnalytics = [[swizzleAnalytics alloc] init];
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     [Parse setApplicationId:@"IGAmaQMQbGC1DePnG0aaYqkdIyf1ZKkxLIw7hC4q"
@@ -40,13 +46,16 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
     
-    [[Heap sharedInstance] setAppId:@"3465098721"];
+    //[[Heap sharedInstance] setAppId:@"3465098721"];
     
-    [Flurry setCrashReportingEnabled:NO];
+    //[Flurry setCrashReportingEnabled:NO];
     //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
-    [Flurry startSession:@"4V7MGQFZYMF6D9X6Y9QR"];
+    //[Flurry startSession:@"4V7MGQFZYMF6D9X6Y9QR"];
     
-    [Appsee start:@"5da342884878429dba1e0f4f552495a1"];
+    //[Appsee start:@"5da342884878429dba1e0f4f552495a1"];
+    
+    [[Analytics sharedInstance] launch:@"five"];
+    
     /*
     fvFacebookLoginViewController *nextViewController = [[fvFacebookLoginViewController alloc] initWithNibName:nil bundle:nil];
 

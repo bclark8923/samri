@@ -37,6 +37,7 @@
 		D30C2C051834B7D100810F5B /* FoodLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C041834B7D100810F5B /* FoodLogObject.m */; };
 		D30C2C081834B7DE00810F5B /* FitnessLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C071834B7DE00810F5B /* FitnessLogObject.m */; };
 		D30C2C0B1834B7ED00810F5B /* FitnessMeasurementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30C2C0A1834B7ED00810F5B /* FitnessMeasurementObject.m */; };
+		D331C9251884A1FA000A1829 /* Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D331C9241884A1FA000A1829 /* Analytics.m */; };
 		D3548192184938E600C4ABAB /* Appsee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3548191184938E600C4ABAB /* Appsee.framework */; };
 		D35481941849392000C4ABAB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35481931849392000C4ABAB /* CoreMedia.framework */; };
 		D3548196184D2B7400C4ABAB /* RecordButtonClearRed.png in Resources */ = {isa = PBXBuildFile; fileRef = D3548195184D2B7300C4ABAB /* RecordButtonClearRed.png */; };
@@ -79,6 +80,8 @@
 		D36F6C2D1842BEEA00C1594B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6C2B1842BEEA00C1594B /* FacebookSDK.framework */; };
 		D36F6C2E1842BEEA00C1594B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F6C2C1842BEEA00C1594B /* Parse.framework */; };
 		D36F6C311842D37E00C1594B /* fvLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D36F6C301842D37E00C1594B /* fvLogCell.m */; };
+		D38B721D18B4063500588FD0 /* swizzleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B721C18B4063500588FD0 /* swizzleAnalytics.m */; };
+		D38B722018B40A2700588FD0 /* touch.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B721F18B40A2700588FD0 /* touch.m */; };
 		D39C292618508BC9005E4B03 /* Flurry in Resources */ = {isa = PBXBuildFile; fileRef = D39C292518508BC9005E4B03 /* Flurry */; };
 		D39C292918508BD2005E4B03 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */; };
 		D39C292B18508BFD005E4B03 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39C292A18508BFD005E4B03 /* AdSupport.framework */; };
@@ -137,6 +140,8 @@
 		D30C2C071834B7DE00810F5B /* FitnessLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitnessLogObject.m; sourceTree = "<group>"; };
 		D30C2C091834B7ED00810F5B /* FitnessMeasurementObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitnessMeasurementObject.h; sourceTree = "<group>"; };
 		D30C2C0A1834B7ED00810F5B /* FitnessMeasurementObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitnessMeasurementObject.m; sourceTree = "<group>"; };
+		D331C9231884A1FA000A1829 /* Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Analytics.h; path = ../../Analytics/Analytics.h; sourceTree = "<group>"; };
+		D331C9241884A1FA000A1829 /* Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Analytics.m; path = ../../Analytics/Analytics.m; sourceTree = "<group>"; };
 		D3548191184938E600C4ABAB /* Appsee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appsee.framework; sourceTree = "<group>"; };
 		D35481931849392000C4ABAB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D3548195184D2B7300C4ABAB /* RecordButtonClearRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonClearRed.png; sourceTree = "<group>"; };
@@ -186,6 +191,11 @@
 		D36F6C2C1842BEEA00C1594B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = FitVoice/Parse.framework; sourceTree = "<group>"; };
 		D36F6C2F1842D37D00C1594B /* fvLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvLogCell.h; sourceTree = "<group>"; };
 		D36F6C301842D37E00C1594B /* fvLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fvLogCell.m; sourceTree = "<group>"; };
+		D38B721A18B3E78400588FD0 /* MyApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyApplication.h; sourceTree = "<group>"; };
+		D38B721B18B4063500588FD0 /* swizzleAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = swizzleAnalytics.h; path = Analytics/swizzleAnalytics.h; sourceTree = "<group>"; };
+		D38B721C18B4063500588FD0 /* swizzleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = swizzleAnalytics.m; path = Analytics/swizzleAnalytics.m; sourceTree = "<group>"; };
+		D38B721E18B40A2600588FD0 /* touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = touch.h; path = Analytics/touch.h; sourceTree = "<group>"; };
+		D38B721F18B40A2700588FD0 /* touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = touch.m; path = Analytics/touch.m; sourceTree = "<group>"; };
 		D39C292518508BC9005E4B03 /* Flurry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Flurry; sourceTree = "<group>"; };
 		D39C292718508BD2005E4B03 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
 		D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.3.0.a; path = Flurry/libFlurry_4.3.0.a; sourceTree = "<group>"; };
@@ -251,6 +261,7 @@
 		D30C2B981834427000810F5B = {
 			isa = PBXGroup;
 			children = (
+				D331C9221884A1B4000A1829 /* Analytics */,
 				D39C292718508BD2005E4B03 /* Flurry.h */,
 				D39C292818508BD2005E4B03 /* libFlurry_4.3.0.a */,
 				D30C2BAA1834427000810F5B /* FitVoice */,
@@ -353,6 +364,20 @@
 				D30C2BCC1834427100810F5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D331C9221884A1B4000A1829 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				D331C9231884A1FA000A1829 /* Analytics.h */,
+				D331C9241884A1FA000A1829 /* Analytics.m */,
+				D38B721A18B3E78400588FD0 /* MyApplication.h */,
+				D38B721B18B4063500588FD0 /* swizzleAnalytics.h */,
+				D38B721C18B4063500588FD0 /* swizzleAnalytics.m */,
+				D38B721E18B40A2600588FD0 /* touch.h */,
+				D38B721F18B40A2700588FD0 /* touch.m */,
+			);
+			name = Analytics;
 			sourceTree = "<group>";
 		};
 		D35481AD184D56E100C4ABAB /* Tab Bar */ = {
@@ -504,6 +529,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = FitVoice;
 				TargetAttributes = {
+					D30C2BA01834427000810F5B = {
+						DevelopmentTeam = 43SSS6QLZM;
+					};
 					D30C2BC11834427100810F5B = {
 						TestTargetID = D30C2BA01834427000810F5B;
 					};
@@ -589,8 +617,11 @@
 				D30C2C0B1834B7ED00810F5B /* FitnessMeasurementObject.m in Sources */,
 				D36F6948183B13C600C1594B /* fvFacebookLoginViewController.m in Sources */,
 				D35481C3184D83B300C4ABAB /* fvSignUpViewController.m in Sources */,
+				D38B722018B40A2700588FD0 /* touch.m in Sources */,
 				D35481A8184D550B00C4ABAB /* fvMeasurementLogViewController.m in Sources */,
+				D331C9251884A1FA000A1829 /* Analytics.m in Sources */,
 				D36F6C311842D37E00C1594B /* fvLogCell.m in Sources */,
+				D38B721D18B4063500588FD0 /* swizzleAnalytics.m in Sources */,
 				D30C2C051834B7D100810F5B /* FoodLogObject.m in Sources */,
 				D35481A1184D4CB400C4ABAB /* fvFitnessLogViewController.m in Sources */,
 			);
@@ -659,7 +690,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: brian clark (ZCW8PU22EX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: brian clark (ZCW8PU22EX)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -698,7 +730,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: brian clark (ZCW8PU22EX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: brian clark (ZCW8PU22EX)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -720,6 +753,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/FitVoice",
@@ -755,6 +789,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/FitVoice",

@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "fvAppDelegate.h"
+#import "MyApplication.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([fvAppDelegate class]));
+        return UIApplicationMain(argc, argv,
+                                 nil,
+                                 NSStringFromClass([fvAppDelegate class]));
     }
 }

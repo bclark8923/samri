@@ -15,7 +15,7 @@
 #import "FitnessLogObject.h"
 #import "FitnessMeasurementObject.h"
 
-@interface fvViewController : UIViewController <SpeechKitDelegate, SKRecognizerDelegate, UIAlertViewDelegate, UITableViewDelegate, CLLocationManagerDelegate>
+@interface fvViewController : UIViewController <SpeechKitDelegate, SKRecognizerDelegate, UIAlertViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
     CLLocation *location;
@@ -24,6 +24,7 @@
     NSMutableData *responseData;
     NSDictionary *actionResponse;
     NSDictionary *fitbitData;
+    NSArray* dictationResults;
     
     QueryObject *newQuery;
     FoodLogObject *newFoodLog;
